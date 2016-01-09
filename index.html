@@ -3,30 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>My Digital Business Card</title>
-    <link rel="stylesheet" href="code-blog/main.css">
-    <link rel="stylesheet" href="code-blog/responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- <img src="pdxKarpet.png" alt="background" class="backgroundimage" /> -->
   </head>
   <body>
     <header>
-      <h1>Web Developer</h1>
+      <img src="amandeep.jpg" alt="propic" class="profilepic" />
+      <h1> Front end web developer</h1>
       <nav>
-        <ul>
+        <ul class="links">
           <li>About Me</li>
         <a href="http://twitter.com/amandeepdindral"><li>Twitter</li></a>
         <a href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab"><li>LinkedIn</li></a>
-          <li>Projects</li>
+        <li class="projectClass"><a href="projects.html">Projects</li></a>
+        <li><a href="contact.html">Contact</a></li>
         <a href="https://github.com/dindrala"> <li>GitHub</li></a>
           </ul>
       </nav>
+      <!-- <section id="articles">
+          <article class="template" data-category="cat">
+            <header>
+              <h1>Title</h1>
+              <div class="byline">
+                By <address><a href="">Author Name</a></address>
+                published <time pubdate datetime="2000-01-01">Publish Time</time>
+              </div>
+            </header>
+            <section class="article-body"></section>
+          </article>
+        </section> -->
     </header>
     <footer>
-      <p>
-        &copy; 2015 Amandeep Dindral.
+      <p class="footerptag">
+        &copy; 2016 Amandeep Dindral.
       </p>
 
     </footer>
 
-    <script type="text/javascript" src="code-blog/javascript.js"></script>
+    <script src="Javascript.js"></script>
+    <script src="projectdata.js"></script>
   </body>
 </html>
