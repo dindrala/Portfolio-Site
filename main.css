@@ -26,7 +26,7 @@ h1 {
   font-family: 'Indie Flower', sans-serif;
   position:fixed;
   top: 85%;
-  left: 50%;
+  left: 40%;
 
   /*color: #00A88E*/
 }
@@ -35,8 +35,8 @@ h1 {
 .profilepic {
    border-radius: 50%;
    position:fixed;
-   top: 50%;
-   left: 50%;
+   top: 30%;
+   left: 35%;
    }
 
 
@@ -63,6 +63,8 @@ h1 {
     position:fixed;
     top: 97%;
     left: 55%;
+}
 
-
+  .template {
+    display: none;
   }

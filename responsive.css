@@ -1,0 +1,25 @@
+.profilepic {
+  border-radius: 20%;
+  position:fixed;
+  top: 30%;
+  left: 11%;
+}
+
+h1 {
+  color: white;
+  font-family: 'Indie Flower', sans-serif;
+  position:fixed;
+  top: 77%;
+  left: 9%;
+}
+
+nav {
+  /*need to put links in a row and closer to profile pic up top*/
+}
+
+.footerptag {
+  font-family: 'Indie Flower', sans-serif;
+  position:fixed;
+  top: 88%;
+  left: 27%;
+}

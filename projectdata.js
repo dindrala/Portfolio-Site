@@ -1,25 +1,27 @@
 var projectData= [
   {
-    title: "form",
-    description: "submission form",
-    date: "tuesday"
+    title: 'form',
+    authorName: 'Amandeep Dindral',
+    body: 'tuesday'
+    date:
   },
+  {
+    title: 'lake tahoe landing page',
+    authorName: 'Amandeep',
+    body: 'Friday'
+    date:'',
+  },
+  {
+    title: '',
+    authorName: '',
+    body: '',
+    date:'',
+  },
+  {
+    title: '',
+    authorName: '',
+    body: '',
+    date:'',
+  }
 
-  var projectData= [
-    {
-      title: "lake tahoe landing page",
-      description: "css basics",
-      date: "Friday"
-    },
-    var projectData= [
-      {
-        title:
-        description:
-        date:
-      },
-      var projectData= [
-        {
-          title:
-          description:
-          date:
-        },
+];

@@ -5,47 +5,58 @@
     <title>My Digital Business Card</title>
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!-- <img src="pdxKarpet.png" alt="background" class="backgroundimage" /> -->
+    <link rel="stylesheet" href="responsive.css" media="only screen and (max-device-width: 480px)">
+
+
+
+
   </head>
   <body>
     <header>
-      <img src="amandeep.jpg" alt="propic" class="profilepic" />
-      <h1> Front end web developer</h1>
       <nav>
         <ul class="links">
           <li>About Me</li>
-        <a href="http://twitter.com/amandeepdindral"><li>Twitter</li></a>
-        <a href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab"><li>LinkedIn</li></a>
-        <li class="projectClass"><a href="projects.html">Projects</li></a>
-        <li><a href="contact.html">Contact</a></li>
-        <a href="https://github.com/dindrala"> <li>GitHub</li></a>
-          </ul>
+          <li><a href="http://twitter.com/amandeepdindral">Twitter</a></li>
+          <li><a href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab">LinkedIn</a></li>
+          <li><a data-content="articles" href>Projects</a></li>
+          <li><a href="https://github.com/dindrala">GitHub</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <!-- <section id="articles">
-          <article class="template" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
-        </section> -->
     </header>
+    <article>
+      <section id="main">
+        <img src="amandeep.jpg" alt="propic" class="profilepic" />
+        <h1> Front end web developer</h1>
+      </section>
+      
+
+      <script id="hello-hi-hey" type="text/x-handlebars-template">
+      <section id="articles">
+        <article class="template" data-category="cat">
+          <header>
+            <div id="title-section">
+            <h1 class="title">{{Title}}</h1>
+          </div>
+            <div class="byline">
+              By <address><a href="">{{Author Name}}</a></address>
+              published <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
+          </header>
+          <div id="body-section">
+          <section class="article-body">{{{body}}}</section>
+          </div>
+        </article>
+      </section>
+  </script>
+
+
     <footer>
-      <p class="footerptag">
-        &copy; 2016 Amandeep Dindral.
-      </p>
-
-    </footer>
-
-    <script src="Javascript.js"></script>
-    <script src="projectdata.js"></script>
+      <p class="footerptag"> &copy; 2016 Amandeep Dindral. </p>
+      </footer>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="portfolio.js"></script>
+    <script src="projectData.js"></script>
+    <script src="scripts/handlebars-v4.0.5.js"></script>
   </body>
 </html>
