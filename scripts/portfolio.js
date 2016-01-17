@@ -32,6 +32,8 @@ $(function () {
     return html;
   };
 
+  //portfolio.sort  here function from example.
+
   projectData.forEach(function(ele) {
     projects.push(new Project(ele));
   });
