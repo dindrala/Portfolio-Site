@@ -1,25 +1,25 @@
 var projectData= [
   {
-    title: 'form',
-    authorName: 'Amandeep Dindral',
-    body: 'tuesday',
+    title: '1st portfolio site',
+    projectUrl: 'amandeepd.com',
+    body: 'project examples',
     date:'',
   },
   {
     title: 'lake tahoe landing page',
-    authorName: 'Amandeep',
+    projectUrl: 'Amandeep',
     body: 'Friday',
     date:'',
   },
   {
     title: '',
-    authorName: '',
+    projectUrl: '',
     body: '',
     date:'',
   },
   {
     title: '',
-    authorName: '',
+    projectUrl: '',
     body: '',
     date:'',
   }

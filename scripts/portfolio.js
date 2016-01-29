@@ -5,13 +5,14 @@ $(function () {
 
   var projects = [];
 
-  function Project (title, description, date) {
+  function Project (title, projectUrl, body, date) {
     this.title = title;
-    this.description = description;
+    this.projectUrl = projectUrl;
+    this.body = body;
     this.date = date;
   };
 
-
+  // var project = new Project();
 
   Project.prototype.toHtml = function () {
     var appTemplate = $('#hello-hi-hey').html();
@@ -44,3 +45,18 @@ $(function () {
   });
 
 });
+
+
+projects.fetchAll = function() {
+  if (localStorage.projectData) {
+    Sites.loadAll(JSON.parse(localStorage.projectData));
+    projectView.initIndexPage();
+  } else {
+    $.get('data/projectData.json', function(data) {
+      Sites.loadAll(data);
+      var dataString = JSON.stringify(data);
+      localStorage.setItem('projectData', dataString);
+      portfolioView.initIndexPage();
+    });
+  }
+};

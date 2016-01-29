@@ -1,7 +1,69 @@
+/*Base*/
+
 body{
   background:url(pdxKarpet.png);
   background-size: cover;
 }
+
+h1 {
+  font-family: 'Indie Flower', sans-serif;
+  position:fixed;
+  top: 70%;
+  left: 37.7%;
+  color: #00A88E;
+
+}
+
+.footerptag {    /*Footer*/
+  font-family: 'Indie Flower', sans-serif;
+  font-size: .75em;
+  position:fixed;
+  top: 93.7%;
+  left: 40%;
+  color: #00A88E
+}
+
+.main-nav li { 
+  font-family: 'Indie Flower', sans-serif;
+  display:inline;
+  position: static;
+  color: #00A88E
+}
+
+ul {
+ position:fixed;
+ top: 10%;
+ left: 35%;
+ color: #00A88E;
+ /*text-decoration: none;
+ list-style-type: none;*/
+}
+
+
+/*Layout*/
+
+.aboutmep  {
+  font-family: 'Indie Flower', sans-serif;
+  position: fixed;
+  top: 78%;
+  left:4%;
+  color: #00A88E
+}
+
+
+.profilepic {
+   border-radius: 25%;
+   position:fixed;
+   top: 30%;
+   left: 36%;
+   height: 240px;
+   width: 240px;
+   }
+
+
+
+/*Theme*/
+
 .overlay{
   background-color: rgba(29, 29, 29, 0.9);
   background-size: cover;
@@ -13,53 +75,17 @@ body{
   left: 0;
 }
 
-
-
-h1 {
-  color: white;
-  font-family: 'Indie Flower', sans-serif;
-  position:fixed;
-  top: 85%;
-  left: 40%;
-  color: #00A88E
-}
-
-
-.profilepic {
-   border-radius: 50%;
-   position:fixed;
-   top: 30%;
-   left: 35%;
-   }
-
-
-   .main-nav li {
-     font-family: 'Indie Flower', sans-serif;
-     display:inline;
-     list-style-type: none;
-     position: static;
-     top: 98%;
-     left: 50%;
-     color: #00A88E
-}
-
-  ul {
-    /*text-decoration: none; /*trying to remove link underlines*/
-    /*list-style-type: none;*/
-    position:fixed;
-    top: 10%;
-    left: 50%;
-    color: #00A88E
-}
-
-  .footerptag {
-    font-family: 'Indie Flower', sans-serif;
-    position:fixed;
-    top: 97%;
-    left: 55%;
-    color: #00A88E
-}
-
   .template {
     display: none;
   }
+
+
+
+
+/*Module*/
+
+  .template{}
+
+
+
+/*State (In responsive.css)*/
