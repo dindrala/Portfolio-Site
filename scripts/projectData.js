@@ -6,9 +6,9 @@ var projectData= [
     date:'',
   },
   {
-    title: 'lake tahoe landing page',
-    projectUrl: 'Amandeep',
-    body: 'Friday',
+    title: '',
+    projectUrl: '',
+    body: '',
     date:'',
   },
   {
