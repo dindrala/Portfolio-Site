@@ -10,7 +10,7 @@ $(function () {
     this.projectUrl = projectUrl;
     this.body = body;
     this.date = date;
-  };
+  }
 
   // var project = new Project();
 
@@ -49,11 +49,11 @@ $(function () {
 
 projects.fetchAll = function() {
   if (localStorage.projectData) {
-    Sites.loadAll(JSON.parse(localStorage.projectData));
+    Project.loadAll(JSON.parse(localStorage.projectData));
     projectView.initIndexPage();
   } else {
     $.get('data/projectData.json', function(data) {
-      Sites.loadAll(data);
+      Project.loadAll(data);
       var dataString = JSON.stringify(data);
       localStorage.setItem('projectData', dataString);
       portfolioView.initIndexPage();
