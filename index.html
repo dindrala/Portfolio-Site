@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Class 301 Project</title>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css" media="only screen and (max-device-width: 480px)">
+    <script id="hello-hi-hey" type="text/x-handlebars-template">
+    <article class="template" data-category="cat">
+  <header>
+    <div id="title-section">
+      <h1 class="title">{{Title}}</h1>
+    </div>
+    <div class="byline">
+      By <address><a href="">{{authorName}}</a></address>
+      published <time pubdate datetime="2000-01-01">Publish Time</time>
+    </div>
+  </header>
+        <div id="body-section">
+        <section class="article-body">{{{body}}}</section>
+        </div>
+      </article>
+    </section>
+
+</script>
+</head>
+<body>
+    <div class="overlay">
+    <header>
+      <nav>
+        <ul class="main-nav">
+          <li class="tab" data-content="about"><a href="#">About Me</a></li>
+          <li class="tab" data-content="articles"><a href="#">Projects</a></li>
+          <li><a href="http://twitter.com/amandeepdindral" target="_blank"> <i class="fa fa-twitter-square fa-lg"></i></a></li>
+          <li><a href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a href="https://github.com/dindrala" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+    <section id="main" class="tab-content">
+        <img src="amandeep.jpg" alt="propic" class="profilepic"/>
+        <h1> Front end web developer</h1>
+        <div class="aboutmep">
+        <p>Hi! My name is Amandeep. I've been working in tech for the last 3+ years on the business development side of things.
+          I have always been fascinated by engineering and product development. This eventually led me to hours of online code tutorials, which led me to Code Fellows.
+          Now I am currently a student at Code Fellows studying Web Development.
+      </p>
+        </div>
+    </section>
+    <section id="articles" class="tab-content">
+      <div class="portfolio-header"><h1>Personal Projects</h1></div>
+    </section>
+    <footer>
+      <p class="footerptag"> &copy; 2016 Amandeep Dindral </p>
+      </footer>
+      </article>
+      </div>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="scripts/handlebars-v4.0.5.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script>Project.fetchAll(ProjectView.initIndexPage);</script>
+  </body>
+</html>
