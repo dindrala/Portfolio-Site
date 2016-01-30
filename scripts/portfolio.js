@@ -1,9 +1,8 @@
 
-$(function (module) {
+(function (module) {
 
   //TODO: clicking projects-link hides all sections, shows articles section.
 
-  var projects = [];
 
   function Project (title, projectUrl, body, date) {
     this.title = title;
@@ -14,10 +13,13 @@ $(function (module) {
 
   // var project = new Project();
 
+  Project.all = [];
+
   Project.prototype.toHtml = function () {
-    var appTemplate = $('#hello-hi-hey').html();
-    var compiledTemplate = Handlebars.compile(appTemplate);
-    var html = compiledTemplate(this);
+    var template = Handlebars.compile($('#hello-hi-hey').text());
+    // var appTemplate = $('#hello-hi-hey').html();
+    // var compiledTemplate = Handlebars.compile(appTemplate);
+    // var html = compiledTemplate(this);
 
     /*Populating the project li element that has class of .projectClass with most current project info: title, description, date */
 
@@ -30,7 +32,7 @@ $(function (module) {
     // this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     // this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
     //
-    return html;
+    return template(this);
   };
 
   //portfolio.sort  here function from example.
@@ -46,24 +48,24 @@ $(function (module) {
   };
 
 
-  projects.forEach(function(a) {
-    var article = a.toHtml();
-    $('#articles').append(article);
-  });
+  // projects.forEach(function(a) {
+  //   var article = a.toHtml();
+  //   $('#articles').append(article);
+  // });
 
 
 
 
-  projects.fetchAll = function() {
+  Project.fetchAll = function() {
     if (localStorage.projectData) {
       Project.loadAll(JSON.parse(localStorage.projectData));
-      projectView.initIndexPage();
+      ProjectView.initIndexPage();
     } else {
       $.get('data/projectData.json', function(data) {
         Project.loadAll(data);
         var dataString = JSON.stringify(data);
         localStorage.setItem('projectData', dataString);
-        portfolioView.initIndexPage();
+        ProjectView.initIndexPage();
       });
     }
   };
