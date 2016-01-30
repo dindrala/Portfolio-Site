@@ -1,5 +1,5 @@
 
-$(function () {
+$(function (module) {
 
   //TODO: clicking projects-link hides all sections, shows articles section.
 
@@ -34,29 +34,39 @@ $(function () {
   };
 
   //portfolio.sort  here function from example.
+  Project.loadAll = function(projectData) {
+    // ADD WHEN MORE PROJECTS ARRIVE
+    // projectData.sort(function(a,b) {
+    //   return(new Date(b.publishedOn)) - (new Date(a.publishedOn));
+    // });
 
-  projectData.forEach(function(ele) {
-    projects.push(new Project(ele));
-  });
+    Project.all = projectData.map(function(ele) {
+      return new Project(ele);
+    });
+  };
+
 
   projects.forEach(function(a) {
     var article = a.toHtml();
     $('#articles').append(article);
   });
 
-});
 
 
-projects.fetchAll = function() {
-  if (localStorage.projectData) {
-    Project.loadAll(JSON.parse(localStorage.projectData));
-    projectView.initIndexPage();
-  } else {
-    $.get('data/projectData.json', function(data) {
-      Project.loadAll(data);
-      var dataString = JSON.stringify(data);
-      localStorage.setItem('projectData', dataString);
-      portfolioView.initIndexPage();
-    });
-  }
-};
+
+  projects.fetchAll = function() {
+    if (localStorage.projectData) {
+      Project.loadAll(JSON.parse(localStorage.projectData));
+      projectView.initIndexPage();
+    } else {
+      $.get('data/projectData.json', function(data) {
+        Project.loadAll(data);
+        var dataString = JSON.stringify(data);
+        localStorage.setItem('projectData', dataString);
+        portfolioView.initIndexPage();
+      });
+    }
+  };
+
+  module.Project = Project;
+}) (window);
