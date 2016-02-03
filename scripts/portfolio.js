@@ -4,11 +4,11 @@
   //TODO: clicking projects-link hides all sections, shows articles section.
 
 
-  function Project (title, projectUrl, body, date) {
-    this.title = title;
-    this.projectUrl = projectUrl;
-    this.body = body;
-    this.date = date;
+  function Project (opts) {
+    this.title = opts.title;
+    this.projectUrl = opts.projectUrl;
+    this.body = opts.body;
+    this.date = opts.date;
   }
 
   // var project = new Project();

@@ -23,7 +23,7 @@ h1 {
   color: #00A88E
 }
 
-.main-nav li { 
+.main-nav li {
   font-family: 'Indie Flower', sans-serif;
   display:inline;
   position: static;
@@ -58,6 +58,10 @@ ul {
    left: 36%;
    height: 240px;
    width: 240px;
+   }
+
+   .project-section {
+     
    }
 
 
