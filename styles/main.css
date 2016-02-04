@@ -7,7 +7,7 @@ body{
 
 h1 {
   font-family: 'Indie Flower', sans-serif;
-  position:fixed;
+  /*position:fixed;*/
   top: 70%;
   left: 37.7%;
   color: #00A88E;
@@ -17,7 +17,7 @@ h1 {
 .footerptag {    /*Footer*/
   font-family: 'Indie Flower', sans-serif;
   font-size: .75em;
-  position:fixed;
+  /*position:fixed;*/
   top: 93.7%;
   left: 40%;
   color: #00A88E
@@ -25,13 +25,13 @@ h1 {
 
 .main-nav li {
   font-family: 'Indie Flower', sans-serif;
-  display:inline;
-  position: static;
+  /*display:inline;*/
+  /*position: static;*/
   color: #00A88E
 }
 
 ul {
- position:fixed;
+ /*position:fixed;*/
  top: 10%;
  left: 35%;
  color: #00A88E;
@@ -44,7 +44,7 @@ ul {
 
 .aboutmep  {
   font-family: 'Indie Flower', sans-serif;
-  position: fixed;
+  /*position: fixed;*/
   top: 78%;
   left:4%;
   color: #00A88E
@@ -53,7 +53,7 @@ ul {
 
 .profilepic {
    border-radius: 25%;
-   position:fixed;
+   /*position:fixed;*/
    top: 30%;
    left: 36%;
    height: 240px;
@@ -61,7 +61,10 @@ ul {
    }
 
    .project-section {
-     
+    font-family: 'Indie Flower', sans-serif;
+    
+
+
    }
 
 

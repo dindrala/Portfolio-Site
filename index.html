@@ -13,21 +13,13 @@
   <script id="hello-hi-hey" type="text/x-handlebars-template">
     <div class="project-section">
 
-        <header>
+      <header>
           <h1 class="title">{{title}}</h1>
-            </header>
-            <h2><a href="">{{projectUrl}}</a></h2> published
-            <time pubdate datetime="2000-01-01">{{date}}</time>
-
-
-
-
-
-          <section class="article-body">{{{body}}}</section>
-
-        </div>
-      </article>
-    </section>
+        </header>
+            <h2 class="projectUrl"><a href="" target="_blank">{{projectUrl}}</a></h2> published
+            <h2 class="time"><time pubdate datetime="2000-01-01">{{date}}</time></h2>
+            <p class="description">{{{description}}}</p>
+          </div>
   </script>
 </head>
 
@@ -46,7 +38,7 @@
         </ul>
       </nav>
     </header>
-    <article>
+    <main>
       <section id="main" class="tab-content" data-content="about">
         <img src="amandeep.jpg" alt="propic" class="profilepic" />
         <h1> Front end web developer</h1>
@@ -63,7 +55,7 @@
       <footer>
         <p class="footerptag"> &copy; 2016 Amandeep Dindral </p>
       </footer>
-    </article>
+    </main>
   </div>
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="scripts/handlebars-v4.0.5.js"></script>

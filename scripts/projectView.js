@@ -21,6 +21,11 @@
 
 
 
+
+
+
+
+
   // $(document).ready(function() {
   //   ProjectView.handleMainMenu(); //runs the function when the browser load
   // });

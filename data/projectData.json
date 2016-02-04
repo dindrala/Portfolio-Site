@@ -1,26 +1,26 @@
 [
    {
-      "title":"1st portfolio site",
+      "title":"portfolio site",
       "projectUrl":"amandeepd.com",
-      "body":"project examples",
+      "description":"This portfolio site contains mini projects that I have completed over time.",
+      "date":"2015-10-14"
+   },
+   {
+      "title":"Lake Tahoe Landing Page",
+      "projectUrl":"http://amandeepd.com/LakeTahoe/LakeTahoe.html",
+      "description":"This project showcases CSS tricks that I was learning at the time.",
+      "date":"2015-9-10"
+   },
+   {
+      "title":"Frogs and Logs",
+      "projectUrl":"http://amandeepd.com/FrogsandLogs2/index.html",
+      "description":"An interactive game I built using C# and the Unity Game Engine.",
+      "date":"2015-11-22"
+   },
+   {
+      "title":"",
+      "projectUrl":"",
+      "description":"",
       "date":""
-   },
-   {
-      "title":"fsda",
-      "projectUrl":"www",
-      "body":"you",
-      "date":"foweah"
-   },
-   {
-      "title":"232",
-      "projectUrl":"fsdafs",
-      "body":"fds",
-      "date":"kopk"
-   },
-   {
-      "title":"moj",
-      "projectUrl":"rtr",
-      "body":"afee",
-      "date":"hbrhytr"
    }
 ]

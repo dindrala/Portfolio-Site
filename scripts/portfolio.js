@@ -7,7 +7,7 @@
   function Project (opts) {
     this.title = opts.title;
     this.projectUrl = opts.projectUrl;
-    this.body = opts.body;
+    this.description = opts.description;
     this.date = opts.date;
   }
 
