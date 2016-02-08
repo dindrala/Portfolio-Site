@@ -61,11 +61,19 @@ ul {
    }
 
    .project-section {
-    font-family: 'Indie Flower', sans-serif;
-    
+   font-family: 'Indie Flower', sans-serif;
+   vertical-align: text-top;
+   display: inline-block;
+   width: 30%;
+   margin: 1%;
+   padding: 0.5%;
+   background: aliceblue;
+   border-radius: 2em;
+}
 
-
-   }
+.projectUrl {
+   font-size: .9em;
+}
 
 
 

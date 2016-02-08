@@ -1,6 +1,6 @@
 [
    {
-      "title":"portfolio site",
+      "title":"Portfolio Site",
       "projectUrl":"amandeepd.com",
       "description":"This portfolio site contains mini projects that I have completed over time.",
       "date":"2015-10-14"
@@ -17,10 +17,4 @@
       "description":"An interactive game I built using C# and the Unity Game Engine.",
       "date":"2015-11-22"
    },
-   {
-      "title":"",
-      "projectUrl":"",
-      "description":"",
-      "date":""
-   }
 ]
