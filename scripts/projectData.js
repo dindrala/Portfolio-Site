@@ -5,23 +5,23 @@ var projectData= [
     body: 'project examples',
     date:'',
   },
-  {
-    title: '',
-    projectUrl: '',
-    body: '',
-    date:'',
-  },
-  {
-    title: '',
-    projectUrl: '',
-    body: '',
-    date:'',
-  },
-  {
-    title: '',
-    projectUrl: '',
-    body: '',
-    date:'',
-  }
+  // {
+  //   title: '',
+  //   projectUrl: '',
+  //   body: '',
+  //   date:'',
+  // },
+  // {
+  //   title: '',
+  //   projectUrl: '',
+  //   body: '',
+  //   date:'',
+  // },
+  // {
+  //   title: '',
+  //   projectUrl: '',
+  //   body: '',
+  //   date:'',
+  // }
 
 ];

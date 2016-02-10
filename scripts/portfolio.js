@@ -62,10 +62,14 @@
       ProjectView.initIndexPage();
     } else {
       $.get('data/projectData.json', function(data) {
+        console.log('woah');
         Project.loadAll(data);
         var dataString = JSON.stringify(data);
         localStorage.setItem('projectData', dataString);
         ProjectView.initIndexPage();
+      })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log('WOAH ERROR:', jqXHR, textStatus, errorThrown);
       });
     }
   };

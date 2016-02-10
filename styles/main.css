@@ -9,7 +9,7 @@ h1 {
   font-family: 'Indie Flower', sans-serif;
   /*position:fixed;*/
   top: 70%;
-  left: 37.7%;
+  left: 20%;
   color: #00A88E;
 
 }
@@ -17,26 +17,24 @@ h1 {
 .footerptag {    /*Footer*/
   font-family: 'Indie Flower', sans-serif;
   font-size: .75em;
-  /*position:fixed;*/
-  top: 93.7%;
+  position:fixed;
+  top: 95.1%;
   left: 40%;
   color: #00A88E
 }
 
 .main-nav li {
   font-family: 'Indie Flower', sans-serif;
-  /*display:inline;*/
+  display:inline;
   /*position: static;*/
   color: #00A88E
 }
 
 ul {
- /*position:fixed;*/
+ position: relative;
  top: 10%;
- left: 35%;
+ left: 38%;
  color: #00A88E;
- /*text-decoration: none;
- list-style-type: none;*/
 }
 
 
@@ -45,7 +43,7 @@ ul {
 .aboutmep  {
   font-family: 'Indie Flower', sans-serif;
   /*position: fixed;*/
-  top: 78%;
+  top: 50%;
   left:4%;
   color: #00A88E
 }

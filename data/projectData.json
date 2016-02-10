@@ -1,20 +1,20 @@
 [
    {
       "title":"Portfolio Site",
-      "projectUrl":"amandeepd.com",
+      "projectUrl":"www.amandeepd.com",
       "description":"This portfolio site contains mini projects that I have completed over time.",
       "date":"2015-10-14"
    },
    {
       "title":"Lake Tahoe Landing Page",
-      "projectUrl":"http://amandeepd.com/LakeTahoe/LakeTahoe.html",
+      "projectUrl":"www.amandeepd.com/LakeTahoe/LakeTahoe.html",
       "description":"This project showcases CSS tricks that I was learning at the time.",
       "date":"2015-9-10"
    },
    {
       "title":"Frogs and Logs",
-      "projectUrl":"http://amandeepd.com/FrogsandLogs2/index.html",
+      "projectUrl":"www.amandeepd.com/FrogsandLogs2/index.html",
       "description":"An interactive game I built using C# and the Unity Game Engine.",
       "date":"2015-11-22"
-   },
+   }
 ]
