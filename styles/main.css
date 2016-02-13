@@ -92,7 +92,11 @@ ul {
     display: none;
   }
 
+a {
+  color: #00A88E;
+  text-decoration: none;
 
+}
 
 
 /*Module*/

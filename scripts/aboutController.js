@@ -4,7 +4,8 @@
   aboutController.index = function() {
 
     $('main > section').hide();
-    $('#').show();
+    $('#main').show();
+
   };
 
   module.aboutController = aboutController;

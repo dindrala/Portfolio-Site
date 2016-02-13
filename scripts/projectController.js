@@ -2,10 +2,11 @@
   var projectController = {};
 
   projectController.index = function() {
-    Project.fetchAll(ProjectView.initIndexPage);
+    Project.fetchAll(projectView.initIndexPage);
 
     $('main > section').hide();
-    $('"section#articles"').show();
+    $('#aritcles').show();
+
 
   };
 
