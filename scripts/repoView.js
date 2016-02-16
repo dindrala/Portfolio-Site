@@ -7,9 +7,9 @@
 
   repoView.index = function(){
     $('#repo').empty();
-    $('#repo').append();
+    $('#repo').append(repos.all.map(content));
 
-    repos.all.map(content);
+    // repos.all.map(content);
 
   };
   module.repoView = repoView;

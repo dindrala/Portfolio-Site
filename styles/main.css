@@ -8,8 +8,8 @@ body{
 h1 {
   font-family: 'Indie Flower', sans-serif;
   /*position:fixed;*/
-  top: 70%;
-  left: 20%;
+  top: 60%;
+  left: 40%;
   color: #00A88E;
 
 }
@@ -19,7 +19,7 @@ h1 {
   font-size: .75em;
   position:fixed;
   top: 95.1%;
-  left: 40%;
+  left: 43.5%;
   color: #00A88E
 }
 
@@ -42,8 +42,8 @@ ul {
 
 .aboutmep  {
   font-family: 'Indie Flower', sans-serif;
-  /*position: fixed;*/
-  top: 50%;
+  position: fixed;
+  top: 70%;
   left:4%;
   color: #00A88E
 }
@@ -51,11 +51,11 @@ ul {
 
 .profilepic {
    border-radius: 25%;
-   /*position:fixed;*/
-   top: 30%;
-   left: 36%;
-   height: 240px;
-   width: 240px;
+   position:fixed;
+   top: 15%;
+   left: 41.5%;
+   height: 200px;
+   width: 200px;
    }
 
    .project-section {
@@ -72,6 +72,22 @@ ul {
 .projectUrl {
    font-size: .9em;
 }
+
+
+#github {
+  font-family: 'Indie Flower', sans-serif;
+  color: #00A88E;
+  position:fixed;
+  top: 82%;
+  left: 40%;
+}
+
+#aboutmetitle {
+  position: fixed;
+  top:60%;
+}
+
+
 
 
 

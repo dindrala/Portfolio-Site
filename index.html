@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <title>Class 301 Project</title>
-  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/responsive.css" media="only screen and (max-device-width: 480px)">
-
-
-  <script id="hello-hi-hey" type="text/x-handlebars-template">
+    <meta charset="utf-8">
+    <title>Class 301 Project</title>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel=
+    'stylesheet' type='text/css'>
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/responsive.css" media=
+    "only screen and (max-device-width: 480px)" rel="stylesheet">
+    <script id="hello-hi-hey" type="text/x-handlebars-template">
     <div class="project-section">
 
       <header>
@@ -20,61 +21,76 @@
             <h2 class="time"><time pubdate datetime="2000-01-01">{{date}}</time></h2>
             <p class="description">{{{description}}}</p>
           </div>
-  </script>
+    </script>
 </head>
-
 <body>
-  <div class="overlay">
-    <header>
-      <nav>
-        <ul class="main-nav">
-          <li class="tab" id="aboutMe"><a href="#" data-content="main">About Me</a></li>
-          <li class="tab" id="projects"><a href="#" data-content="articles">Projects</a></li>
-          <li>
-            <a href="http://twitter.com/amandeepdindral" target="_blank"> <i class="fa fa-twitter-square fa-lg"></i></a>
-          </li>
-          <li><a href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-          <li><a href="https://github.com/dindrala" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="main" class="tab-content" data-content="about">
-        <img src="amandeep.jpg" alt="propic" class="profilepic" />
-        <h1> Front end web developer</h1>
-        <div class="aboutmep">
-          <p>Hi! My name is Amandeep. I've been working in tech for the last 3+ years on the business development side of things. I have always been fascinated by engineering and product development. This eventually led me to hours of online code tutorials,
-            which led me to Code Fellows. Now I am currently a student at Code Fellows studying Web Development.
-          </p>
-        </div>
-        <div id="github">
-            <h4>Check out my projects on GitHub</h4>
-              <ul id="repo">
+    <div class="overlay">
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li class="tab" id="aboutMe">
+                        <a data-content="main" href="#">About Me</a>
+                    </li>
+                    <li class="tab" id="projects">
+                        <a data-content="articles" href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/amandeepdindral" target=
+                        "_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href=
+                        "http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab"
+                        target="_blank"><i class=
+                        "fa fa-linkedin fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dindrala" target=
+                        "_blank"><i class="fa fa-github-alt fa-lg"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="tab-content" data-content="about" id="main">
+                <img alt="propic" class="profilepic" src="amandeep.jpg">
+                <h1 id="aboutmetitle">Front end web developer</h1>
+                <div class="aboutmep">
+                    <p>Hi! My name is Amandeep. I've been working in tech for
+                    the last 3+ years on the business development side of
+                    things. I have always been fascinated by engineering and
+                    product development. This eventually led me to hours of
+                    online code tutorials, which led me to Code Fellows. Now I
+                    am currently a student at Code Fellows studying Web
+                    Development. Check out my projects on Github :</p>
+                </div>
+                <div id="github"><ul id="repo"></ul></div>
+            </section>
+            <section class="tab-content" id="articles">
+                <div class="portfolio-header">
+                    <!-- <h1>Personal Projects</h1> -->
+                </div>
+            </section>
+            <footer>
+                <p class="footerptag">&copy; 2016 Amandeep Dindral</p>
+            </footer>
+        </main>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="scripts/handlebars-v4.0.5.js"></script>
+    <script src="scripts/page.js"></script>
 
-              </ul>
-          </div>
-      </section>
-      <section id="articles" class="tab-content">
-        <div class="portfolio-header">
-          <h1>Personal Projects</h1></div>
-      </section>
-      <footer>
-        <p class="footerptag"> &copy; 2016 Amandeep Dindral </p>
-      </footer>
-    </main>
-  </div>
-  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="scripts/handlebars-v4.0.5.js"></script>
-  <script src="scripts/page.js"></script>
-  <script src="scripts/portfolio.js"></script>
-  <script src="scripts/projectView.js"></script>
-  <script src="scripts/aboutController.js"></script>
-  <script src="scripts/projectController.js"></script>
-  <script src="scripts/routes.js"></script>
-  <script>
-    $("section#articles").hide();
-    Project.fetchAll(ProjectView.initIndexPage);
-  </script>
+    <script src="scripts/githubToken.js"></script>
+    <script src="scripts/repo.js"></script>
+    <script src="scripts/repoView.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/projectController.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script>
+      $("section#articles").hide();
+      Project.fetchAll(ProjectView.initIndexPage);
+    </script>
 </body>
-
 </html>

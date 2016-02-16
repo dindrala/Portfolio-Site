@@ -29,6 +29,7 @@
       var myHtml = a.toHtml();
       $('#articles').append(a.toHtml());
     });
+    repos.repoRequest(repoView.index);
     ProjectView.handleMainNav();
 
   };
