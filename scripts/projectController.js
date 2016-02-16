@@ -4,8 +4,8 @@
   projectController.index = function() {
     Project.fetchAll(projectView.initIndexPage);
 
-    $('main > section').hide();
-    $('#aritcles').show();
+    // $('main > section').hide();
+    // $('#aritcles').show();
 
 
   };

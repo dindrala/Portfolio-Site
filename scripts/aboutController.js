@@ -3,8 +3,8 @@
 
   aboutController.index = function() {
 
-    $('main > section').hide();
-    $('#main').show();
+    // $('main > section').hide();
+    // $('#main').show();
 
   };
 
