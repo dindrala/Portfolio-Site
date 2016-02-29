@@ -3,9 +3,9 @@
 
   aboutController.index = function() {
 
-    // $('main > section').hide();
-    // $('#main').show();
-
+    repos.repoRequest(repoView.index);
+    $('main > section').hide();
+    $('#main').show();
   };
 
   module.aboutController = aboutController;

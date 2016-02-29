@@ -1,37 +1,27 @@
 
 (function(module) {
-  var ProjectView= {};
+  var projectView= {};
 
-  ProjectView.handleMainNav = function() {
-    $("nav a").on("click", function(e){
-    var dataContent = $(e.target).attr("data-content");
-    $("section").hide();
-    $("#" + dataContent).show();
-
+  projectView.handleMainNav = function() {
+    $('nav a').on('click', function(e) {
+      var dataContent = $(e.target).attr('data-content');
+      $('section').hide();
+      $('#' + dataContent).show();
     });
   };
 
 
 
-
-
-
-
-
-
-  // $(document).ready(function() {
-  //   ProjectView.handleMainMenu(); //runs the function when the browser load
-  // });
-
-
-  ProjectView.initIndexPage = function() {
+  projectView.initIndexPage = function() {
+    $('#articles').empty();
     Project.all.forEach(function(a){
       var myHtml = a.toHtml();
       $('#articles').append(a.toHtml());
     });
     repos.repoRequest(repoView.index);
-    ProjectView.handleMainNav();
-
+    projectView.handleMainNav();
   };
-  module.ProjectView = ProjectView;
+
+
+  module.projectView = projectView;
 }) (window);
