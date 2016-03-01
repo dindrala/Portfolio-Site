@@ -3,6 +3,14 @@
 
 @media screen and (min-width: 480px) {
 
+  #github ul {
+    font-family: 'Indie Flower', sans-serif;
+    color: #00A88E;
+    /*position:relative;*/
+    top:60%;
+    left: 40%;
+  }
+
   body{
     background:url(pdxKarpet.png);
     background-size: cover;
@@ -18,6 +26,11 @@
     left: 0;
   }
 
+#aboutmetitle {
+  position: fixed;
+  top:50%;
+}
+}
 
 
   h1 {
@@ -47,6 +60,7 @@
      height: 240px;
      width: 240px;
      }
+
 
 
      .main-nav li {
@@ -81,6 +95,8 @@
     .template {
       display: none;
     }
+
+
 
 
 }

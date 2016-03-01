@@ -1,9 +1,4 @@
-/*Base*/
-
-body{
-  background:url(pdxKarpet.png);
-  background-size: cover;
-}
+/*Layout*/
 
 h1 {
   font-family: 'Indie Flower', sans-serif;
@@ -14,7 +9,7 @@ h1 {
 
 }
 
-.footerptag {    /*Footer*/
+.footerptag {
   font-family: 'Indie Flower', sans-serif;
   font-size: .75em;
   position:fixed;
@@ -26,7 +21,6 @@ h1 {
 .main-nav li {
   font-family: 'Indie Flower', sans-serif;
   display:inline;
-  /*position: static;*/
   color: #00A88E
 }
 
@@ -38,7 +32,7 @@ ul {
 }
 
 
-/*Layout*/
+
 
 .aboutmep  {
   font-family: 'Indie Flower', sans-serif;
@@ -90,8 +84,13 @@ ul {
 
 
 
-
 /*Theme*/
+
+body{
+  background:url(pdxKarpet.png);
+  background-size: cover;
+}
+
 
 .overlay{
   background-color: rgba(29, 29, 29, 0.9);
@@ -108,6 +107,8 @@ ul {
     display: none;
   }
 
+  /*Module -Handles my icons-*/
+
 a {
   color: #00A88E;
   text-decoration: none;
@@ -115,10 +116,4 @@ a {
 }
 
 
-/*Module*/
-
-  .template{}
-
-
-
-/*State (In responsive.css)*/
+/*State*/
