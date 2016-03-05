@@ -88,22 +88,24 @@ ul {
 
   .tab-content {
      margin:0 auto;
+
      max-width: 70%;
      text-align: center;
-     margin-top: 20%;
-
-
+     margin-top: 15%;
    }
 
-
+.tab-content:nth-of-type(2) {
+  display: flex;
+}
 
 
    .project-section {
    font-family: 'Raleway', sans-serif;
-   vertical-align: text-top;
-   display: inline-block;
+   display: flex;
+   flex-direction: column;
    width: 30%;
    margin: 1%;
+   margin-bottom: 50px;
    padding: 0.5%;
    background: #817361;
    border-radius: 2em;
@@ -164,7 +166,8 @@ header.expanded .title-subline {
 
 .smooth {
   /* set animation*/
-  -webkit-transition: all 1s ease;
+
+  -webkit-transition: all .02s ease;
   transition: all 1s ease;
 }
 
