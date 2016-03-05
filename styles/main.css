@@ -6,6 +6,8 @@ h1 {
   top: 60%;
   left: 40%;
   color: #ffffff;
+  /*text-decoration: underline;*/
+
 
 }
 
@@ -88,7 +90,7 @@ ul {
      margin:0 auto;
      max-width: 70%;
      text-align: center;
-     margin-top: 15%;
+     margin-top: 20%;
 
 
    }
@@ -115,21 +117,23 @@ ul {
 #github {
   font-family: 'Raleway', sans-serif;
   color: #666666;
-  /*position:fixed;*/
+  position:relative;
   top: 82%;
-  left: 40%;
+  right: 1.7%;
 }
 
 #repo {
   list-style-type:none;
   color: #666666;
 
+
 }
 
-h1 #aboutmetitle {
-  /*position: fixed;*/
-  top:60%;
-  left: 40%;
+h1 #main {
+  position: fixed;
+text-align: center;
+text-decoration: underline;
+
 
 }
 
