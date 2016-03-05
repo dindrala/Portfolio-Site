@@ -1,84 +1,134 @@
 /*Layout*/
 
 h1 {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: 'Raleway', sans-serif;
   /*position:fixed;*/
   top: 60%;
   left: 40%;
-  color: #00A88E;
+  color: #ffffff;
+
+}
+
+.title-subline {
+  opacity: 0;
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  /*pointer-events: */
 
 }
 
 .footerptag {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: .75em;
   position:fixed;
   top: 95.1%;
   left: 43.5%;
-  color: #00A88E
+  color: #ffffff;
 }
 
 .main-nav li {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: 'Raleway', sans-serif;
   display:inline;
-  color: #00A88E
+  color: #ffffff;
+}
+
+.main-nav {
+  margin-top: 0;
+  padding-left: 0;
+  width:300px;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 20px;
+
 }
 
 ul {
- position: relative;
+ /*position: relative;
  top: 10%;
- left: 38%;
+ left: 38%;*/
  color: #00A88E;
 }
 
+.logo-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  display: flex;
+  width: 300px;
+}
 
 
 
 .aboutmep  {
-  font-family: 'Indie Flower', sans-serif;
-  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  /*position: fixed;*/
   top: 70%;
   left:4%;
-  color: #00A88E
+  color: #666666;
+
 }
 
 
 .profilepic {
-   border-radius: 25%;
-   position:fixed;
+   border-radius: 50%;
+   /*position:fixed;*/
    top: 15%;
    left: 41.5%;
-   height: 200px;
-   width: 200px;
+   height: 55px;
+   width: 55px;
    }
 
+  /*.tab-content {
+     margin:0 auto;
+     max-width: 70%;
+     text-align: center;
+     margin-top: 5%;
+
+
+   }*/
+
+
+
+
    .project-section {
-   font-family: 'Indie Flower', sans-serif;
+   font-family: 'Raleway', sans-serif;
    vertical-align: text-top;
    display: inline-block;
    width: 30%;
    margin: 1%;
    padding: 0.5%;
-   background: aliceblue;
+   background: #817361;
    border-radius: 2em;
 }
 
 .projectUrl {
-   font-size: .9em;
+   font-size: .84em;
 }
 
 
 #github {
-  font-family: 'Indie Flower', sans-serif;
-  color: #00A88E;
-  position:fixed;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  /*position:fixed;*/
   top: 82%;
   left: 40%;
 }
 
-#aboutmetitle {
-  position: fixed;
+#repo {
+  list-style-type:none;
+
+}
+
+h1 #aboutmetitle {
+  /*position: fixed;*/
   top:60%;
+  left: 40%;
+
 }
 
 
@@ -86,12 +136,38 @@ ul {
 
 /*Theme*/
 
-body{
-  background:url(pdxKarpet.png);
+header{
+  background:url("/styles/thejourney.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative;
+  height:300px;
+  margin: 0;
 }
 
+header.expanded {
+  height:800px;
+  /*padding:*/
+}
 
+header.expanded .title-subline {
+  opacity: 1;
+}
+
+.smooth {
+  /* set animation*/
+  -webkit-transition: all .02s ease;
+  transition: all .02s ease;
+}
+
+body{
+  margin: 0;
+  background-color: #d3d3d3
+
+}
+
+/*
 .overlay{
   background-color: rgba(29, 29, 29, 0.9);
   background-size: cover;
@@ -101,7 +177,7 @@ body{
   z-index: 10;
   top: 0;
   left: 0;
-}
+}*/
 
   .template {
     display: none;
@@ -110,10 +186,45 @@ body{
   /*Module -Handles my icons-*/
 
 a {
-  color: #00A88E;
+  color: #ffffff;
   text-decoration: none;
 
 }
 
+/*a:hover {
+  text-decoration: underline;
+  color:#ffffff;
 
-/*State*/
+}*/
+
+
+
+/*nav bar hover effect*/
+
+.slide-center-out
+{
+text-decoration:none;
+display: inline-block;
+color:white;
+}
+/* add a empty string after the elment with class .slide-center-out  */
+.slide-center-out:after
+{
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+-webkit-transition: width .5s ease, background-color .5s ease;
+-moz-transition: width .5s ease, background-color .5s ease;
+
+margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+}
+
+/* Change the width and background on hover, aka sliding from the middle to the left and right */
+.slide-center-out:hover:after
+{
+width: 100%;
+background: white;
+}

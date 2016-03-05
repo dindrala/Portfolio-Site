@@ -6,7 +6,11 @@
     $('main > section').hide();
     $('section#articles').show();
 
+    $(window).off('scroll');
+    $('header').removeClass('expanded');
   };
+
+  
 
   module.projectController = projectController;
 }) (window);
