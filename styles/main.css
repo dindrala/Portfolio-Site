@@ -1,14 +1,9 @@
 /*Layout*/
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  /*position:fixed;*/
-  top: 60%;
-  left: 40%;
+.logo h1 {
+  font-family: 'Raleway';
   color: #ffffff;
-  /*text-decoration: underline;*/
-
-
+  text-decoration: underline;
 }
 
 .title-subline {
@@ -16,22 +11,19 @@ h1 {
   position: absolute;
   left: 200px;
   top: 250px;
-  /*pointer-events: */
-
-}
+  }
 
 .footerptag {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-size: .75em;
-  /*position:fixed;*/
-    text-align: center;
+  text-align: center;
   top: 95.1%;
   left: 43.5%;
-  color: #ffffff;
+  color: #666666;
 }
 
 .main-nav li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   display:inline;
   color: #ffffff;
 }
@@ -43,15 +35,11 @@ h1 {
   justify-content: space-between;
   display: flex;
   margin-right: 20px;
-
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-ul {
- /*position: relative;
- top: 10%;
- left: 38%;*/
- color: #00A88E;
-}
+
 
 .logo-nav {
   display: flex;
@@ -68,18 +56,24 @@ ul {
 
 
 .aboutmep  {
-  font-family: 'Open Sans', sans-serif;
-  /*position: fixed;*/
+  font-family: 'Ubuntu', sans-serif;
   top: 70%;
   left:4%;
   color: #666666;
+  line-height: 1.4;
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  }
 
+.p-repo-border {
+  border-style:solid;
+  border-color: #666666;
 }
-
 
 .profilepic {
    border-radius: 50%;
-   /*position:fixed;*/
    top: 15%;
    left: 41.5%;
    height: 55px;
@@ -91,62 +85,72 @@ ul {
 
      max-width: 70%;
      text-align: center;
-     margin-top: 15%;
+     margin-top: 17%;
+     margin-bottom: 17%;
    }
 
 .tab-content:nth-of-type(2) {
   display: flex;
+  margin-top: 5%;
 }
 
+.project-section {
 
-   .project-section {
-   font-family: 'Raleway', sans-serif;
-   display: flex;
-   flex-direction: column;
-   width: 30%;
-   margin: 1%;
-   margin-bottom: 50px;
-   padding: 0.5%;
-   background: #817361;
-   border-radius: 2em;
-}
+     font-family: 'Ubuntu', sans-serif;
+     color:#666666;
+     display: flex;
+     flex-direction: column;
+     width: 30%;
+     margin: 1%;
+     margin-bottom: 50px;
+     padding: 0.5%;
+     background:#1F1F1F;
+     border-radius: 2em;
+     }
 
-.projectUrl {
+.projectUrl a {
    font-size: .84em;
+   text-decoration: none;
 }
 
-
-#github {
-  font-family: 'Raleway', sans-serif;
-  color: #666666;
-  position:relative;
-  top: 82%;
-  right: 1.7%;
+#project-title h1 {
+font-family: 'Ubuntu', sans-serif;
+ text-decoration: underline;
+ color: #ffffff;
+ text-align: center;
+ margin-top: 5%;
+ font-size: 24px;
+ letter-spacing:3px;
 }
 
-#repo {
-  list-style-type:none;
-  color: #666666;
-
-
+#about-title h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
+  letter-spacing:3px;
 }
 
-h1 #main {
-  position: fixed;
-text-align: center;
-text-decoration: underline;
-
-
+.title a {
+  text-decoration: none;
+  color:#666666;
 }
 
-
-
+#repo a {
+  text-decoration: none;
+  color:#666666;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  right: 2.7%;
+}
 
 
 /*Theme*/
 
 header{
-  background:url("/styles/thejourney.jpeg");
+  background:url("/styles/mt-sunset.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -157,7 +161,6 @@ header{
 
 header.expanded {
   height:800px;
-  /*padding:*/
 }
 
 header.expanded .title-subline {
@@ -165,7 +168,7 @@ header.expanded .title-subline {
 }
 
 .smooth {
-  /* set animation*/
+
 
   -webkit-transition: all .02s ease;
   transition: all 1s ease;
@@ -173,39 +176,8 @@ header.expanded .title-subline {
 
 body{
   margin: 0;
-  background-color: #d3d3d3
-
+  background-color:#000000;
 }
-
-/*
-.overlay{
-  background-color: rgba(29, 29, 29, 0.9);
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  top: 0;
-  left: 0;
-}*/
-
-  .template {
-    display: none;
-  }
-
-  /*Module -Handles my icons-*/
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-
-}
-
-/*a:hover {
-  text-decoration: underline;
-  color:#ffffff;
-
-}*/
 
 
 

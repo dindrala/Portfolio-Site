@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Class 301 Project</title>
-    <link href="https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href=
+    "https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel=
+    "stylesheet" type="text/css">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
     <link href="/styles/main.css" rel="stylesheet">
-    <link href="styles/responsive.css" media="only screen and (max-device-width: 480px)" rel="stylesheet">
+    <link href="styles/responsive.css" media=
+    "only screen and (max-device-width: 480px)" rel="stylesheet">
     <script id="hello-hi-hey" type="text/x-handlebars-template">
 
-    <div class="project-section">
+        <div class="project-section">
 
 
-                <h1 class="title">{{title}}</h1>
+            <h1 class="title"><a href="{{projectUrl}}" target="_blank">{{title}}</a></h1> published
 
-            <h2 class="projectUrl"><a href="{{projectUrl}}" target="_blank">{{projectUrl}}</a></h2> published
+            <!-- <h2 class="projectUrl"><a href="{{projectUrl}}" target="_blank">Link</a></h2> published -->
             <h2 class="time"><time pubdate datetime="2000-01-01">{{date}}</time></h2>
             <p class="description">{{{description}}}</p>
         </div>
     </script>
 </head>
-
 <body>
-        <header class="smooth">
-          <div class="logo-nav">
+    <header class="smooth">
+        <div class="logo-nav">
             <div class="logo">
-              <img alt="propic" class="profilepic" src="amandeep.jpg">
-              <h1>Amandeep Dindral</h1>
+                <img alt="propic" class="profilepic" src="amandeep.jpg">
+                <h1>Amandeep Dindral</h1>
             </div>
-
             <nav>
                 <ul class="main-nav">
                     <li class="tab" id="aboutMe">
-                        <a class="slide-center-out" data-content="main" href="/">About Me</a>
+                        <a class="slide-center-out" data-content="main" href=
+                        "/">About Me</a>
                     </li>
                     <li class="tab" id="projects">
-                        <a class="slide-center-out" data-content="articles" href="/project">Projects</a>
+                        <a class="slide-center-out" data-content="articles"
+                        href="/project">Projects</a>
                     </li>
                     <li>
-                        <a class="slide-center-out" href="http://twitter.com/amandeepdindral" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+                        <a class="slide-center-out" href=
+                        "http://twitter.com/amandeepdindral" target=
+                        "_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
                     </li>
                     <li>
-                        <a class="slide-center-out" href="http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab" target="_blank"><i class=
+                        <a class="slide-center-out" href=
+                        "http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab"
+                        target="_blank"><i class=
                         "fa fa-linkedin fa-lg"></i></a>
                     </li>
                     <li>
-                        <a class="slide-center-out" href="https://github.com/dindrala" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a>
+                        <a class="slide-center-out" href=
+                        "https://github.com/dindrala" target="_blank"><i class=
+                        "fa fa-github-alt fa-lg"></i></a>
                     </li>
                 </ul>
             </nav>
-          </div>
-            <div class="title-subline smooth">
-              <!-- <h1>Amandeep's Portfolio</h1> -->
-              </div>
-        </header>
-        <main>
-            <section class="tab-content" data-content="about" id="main">
+        </div>
+        <div class="title-subline smooth">
+            <!-- <h1>Amandeep's Portfolio</h1> -->
+        </div>
+    </header>
+    <main>
+        <section class="tab-content" data-content="about" id="main">
+            <div id="about-title">
                 <h1>About Me</h1>
+            </div>
+            <div class="p-repo-border">
                 <div class="aboutmep">
-                    <p>Hi! My name is Amandeep. I've been working in tech for the last 3+ years on the business development side of things. I have always been fascinated by engineering and product development. This eventually led me to hours of online code tutorials, which led me to Code Fellows. Now I am currently a student at Code Fellows studying Web Development. Check out my projects on Github :</p>
+                    <p>Hello my name is Amandeep. I am a Web Developer. I've been working in the tech industry for
+                    the last 3+ years on the business development side of
+                    things. I have always been fascinated by engineering and
+                    product development which eventually enticed me to make a switch to Web Development. I enjoy taking
+                    complex ideas and turning them into elegant products using HTML, CSS and JavaScript. When I am not coding I enjoy exercising, reading and films.
+                    Check out my projects on Github:</p>
+
                 </div>
                 <div id="github">
                     <ul id="repo"></ul>
                 </div>
-            </section>
-            <section class="tab-content" id="articles">
-                <div class="portfolio-header">
-                    <h1>Projects</h1>
-                </div>
-            </section>
-            <footer>
-                <p class="footerptag">&copy; 2016 Amandeep Dindral</p>
-            </footer>
-        </main>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="scripts/handlebars-v4.0.5.js"></script>
-    <script src="scripts/page.js"></script>
+            </div>
+        </section>
+        <div id="project-title">
+            <h1>Projects</h1>
+        </div>
+        <section class="tab-content" id="articles"></section>
+        <footer>
+            <p class="footerptag">&copy; 2016 Amandeep Dindral</p>
+        </footer>
+    </main>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
+    </script>
+    <script src="scripts/handlebars-v4.0.5.js">
+    </script>
+    <script src="scripts/page.js">
+    </script>
+    <script src="scripts/githubToken.js">
+    </script>
+    <script src="scripts/repo.js">
+    </script>
+    <script src="scripts/repoView.js">
+    </script>
 
-    <script src="scripts/githubToken.js"></script>
-    <script src="scripts/repo.js"></script>
-    <script src="scripts/repoView.js"></script>
-    <script src="scripts/portfolio.js"></script>
-    <script src="scripts/projectView.js"></script>
-    <script src="scripts/aboutController.js"></script>
-    <script src="scripts/projectController.js"></script>
-    <script src="scripts/routes.js"></script>
 
+    <script src="scripts/portfolio.js">
+    </script>
+    <script src="scripts/projectView.js">
+    </script>
+    <script src="scripts/aboutController.js">
+    </script>
+    <script src="scripts/projectController.js">
+    </script>
+    <script src="scripts/routes.js">
+    </script>
 </body>
-
 </html>

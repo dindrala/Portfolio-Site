@@ -6,6 +6,7 @@
     repos.repoRequest(repoView.index);
     $('main > section').hide();
     $('#main').show();
+    $('div#project-title').hide();
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1) {
