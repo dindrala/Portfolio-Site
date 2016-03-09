@@ -1,0 +1,30 @@
+/*mobile*/
+@media all and (max-width : 725px) {
+.tab-content {
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 80%;
+  }
+  .project-section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .logo-nav {
+    flex-direction: column;
+  }
+  .logo {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .profilepic {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+  }
+  nav {
+    margin: 0 auto;
+    padding-left: 5px;
+  }
+}
+@media all and (max-width : 480px) {}
