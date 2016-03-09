@@ -8,6 +8,8 @@
     $('div#project-title').show();
     $(window).off('scroll');
     $('header').removeClass('expanded');
+    // $('section#articles.tab-content').css('display').remove;
+
   };
 
 
