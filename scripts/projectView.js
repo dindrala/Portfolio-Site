@@ -6,6 +6,7 @@
     $('nav a').on('click', function(e) {
       var dataContent = $(e.target).attr('data-content');
       $('section').hide();
+      $('#articles').show();
       $('#' + dataContent).show();
     });
   };
