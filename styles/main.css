@@ -146,6 +146,9 @@ font-family: 'Ubuntu', sans-serif;
   right: 2.7%;
 }
 
+#repo li {
+  list-style-type: none;
+}
 
 /*Theme*/
 

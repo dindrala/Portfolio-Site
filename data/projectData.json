@@ -1,16 +1,14 @@
 [
    {
-      "title":"Portfolio Site",
+      "title":"First Site First Deploy",
       "projectUrl":"http://amandeepd.com",
-      "description":"This portfolio site contains mini projects that I have completed over time.",
-      "date":"2015-10-14",
+      "description":"Technologies used: HTML, CSS",
       "projectImg": "styles/FirstSite.jpg"
    },
    {
       "title":"Lake Tahoe Landing Page",
       "projectUrl":"http://amandeepd.com/LakeTahoe/LakeTahoe.html",
-      "description":"This project showcases CSS tricks that I was learning at the time.",
-      "date":"2015-9-10",
+      "description":"Technologies used: CSS",
       "projectImg": "styles/Tahoe.jpeg"
    }
 ]
