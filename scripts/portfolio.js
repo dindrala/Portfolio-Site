@@ -6,6 +6,7 @@
     this.projectUrl = opts.projectUrl;
     this.description = opts.description;
     this.date = opts.date;
+    this.projectImg = opts.projectImg;
   }
 
 
