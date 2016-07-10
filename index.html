@@ -16,9 +16,11 @@
     <link href="styles/responsive.css" rel="stylesheet"/>
     <script id="hello-hi-hey" type="text/x-handlebars-template">
           <div class="project-section" class="grid">
-             <img src="{{projectImg}}"></img>
-             <h1 class="title"><a href="{{projectUrl}}" target="_blank">{{title}}</a></h1>
-              <p class="description">{{{description}}}</p>
+             <a href="{{projectUrl}}" target="_blank"><img src="{{projectImg}}"></img></a>
+             <div class="span-text">
+               <span class="title text">{{title}}</span> <br />
+               <span class="description text">{{{description}}}</span>
+             </div>
             </div>
      </script>
 </head>
@@ -63,17 +65,16 @@
         </div>
     </header>
     <main>
-        <section class="tab-content" data-content="about" id="main">
+        <section class="tab-content about-tab" data-content="about" id="main">
             <div id="about-title">
-                <h1>About Me</h1>
+                <!-- <h1>About Me</h1> -->
             </div>
             <div class="p-repo-border">
                 <div class="aboutmep">
                     <p>Hello my name is Amandeep. I am a Web Developer. I've been working in the tech industry for
-                    the last 3+ years on the business development side of
-                    things. I have always been fascinated by engineering and
-                    product development which eventually enticed me to make a switch to Web Development. I enjoy taking
-                    complex ideas and turning them into elegant products using HTML, CSS and JavaScript. When I am not coding I enjoy exercising, reading and films.
+                    the last 3+ years on the business development side of things. I have always been fascinated by
+                    product development which eventually led me to make a switch to Web Development. I love taking
+                    complex client ideas and making their vision a (virtual) reality. When I am not coding I enjoy exercising, reading and films.
                     Check out my projects on Github:</p>
 
                 </div>
@@ -83,7 +84,7 @@
             </div>
         </section>
         <div id="project-title">
-            <h1>Projects</h1>
+            <!-- <h1>Projects</h1> -->
         </div>
         <section class="tab-content" id="articles"></section>
         <footer>

@@ -1,4 +1,6 @@
-/*Layout*/
+body {
+  margin: 0;
+}
 
 .logo h1 {
   font-family: 'Raleway';
@@ -39,8 +41,6 @@
   text-decoration: underline;
 }
 
-
-
 .logo-nav {
   display: flex;
   align-items: baseline;
@@ -52,8 +52,6 @@
   display: flex;
   width: 300px;
 }
-
-
 
 .aboutmep  {
   font-family: 'Ubuntu', sans-serif;
@@ -82,8 +80,6 @@
 
   .tab-content {
      margin:0 auto;
-
-     max-width: 70%;
      text-align: center;
      margin-top: 17%;
      margin-bottom: 17%;
@@ -92,55 +88,27 @@
 .tab-content:nth-of-type(2) {
   display: flex;
   margin-top: 5%;
+  justify-content: space-around;
+}
+
+.about-tab {
+  max-width: 70%;
 }
 
 .project-section {
 
-     font-family: 'Ubuntu', sans-serif;
-     color:#666666;
-     display: flex;
-     flex-direction: column;
-     width: 30%;
-     margin: 1%;
-     margin-bottom: 50px;
-     padding: 0.5%;
-     background:#000000;
-     border-radius: 2em;
-     }
+  font-family:'Raleway';
+  color:#000000;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 50px;
+}
 
 .project-section img {
-
-
-}
-
-.projectUrl a {
-   font-size: .84em;
-   text-decoration: none;
-}
-
-#project-title h1 {
-font-family: 'Ubuntu', sans-serif;
- text-decoration: underline;
- color: #ffffff;
- text-align: center;
- margin-top: 5%;
- font-size: 24px;
- letter-spacing:3px;
-}
-
-#about-title h1 {
-  font-family: 'Ubuntu', sans-serif;
-  text-decoration: underline;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 5%;
-  font-size: 24px;
-  letter-spacing:3px;
-}
-
-.title a {
-  text-decoration: none;
-  color:#666666;
+  border-style:solid;
+  border-color: #000000;
+  width: 100%;
 }
 
 #repo a {
@@ -155,11 +123,32 @@ font-family: 'Ubuntu', sans-serif;
   list-style-type: none;
 }
 
-/*Theme*/
+/*Project Section Hover*/
 
+.project-section:hover img {
+  opacity: 0.2;
+}
 
+.project-section .text {
+  position: relative;
+  bottom: 120px;
+  visibility: hidden;
+}
 
+.project-section:hover .text {
+  visibility: visible;
+}
 
+.span-text {
+  width: 70%;
+  margin: 0 auto;
+}
+.title {
+  text-decoration: none;
+  color:#000000;
+  font-family: 'Raleway';
+  font-weight: bolder;
+}
 
 /*nav bar hover effect*/
 
@@ -190,9 +179,3 @@ margin:auto; /* center the cotent so it will sliding from the midddle to the lef
 width: 100%;
 background: #000000;
 }
-
-
-
-
-
-/*Project Section */
