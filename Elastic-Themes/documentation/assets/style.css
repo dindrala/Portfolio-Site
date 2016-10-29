@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { height: 100%; line-height: 1; font-family: 'Roboto', sans-serif; color: #454545; background: #F2F2F2; }
+a, a:visited { cursor: pointer; text-decoration: none; color: #2980b9; font-weight: 500; transition: opacity 1s; -moz-transition: opacity 1s; -webkit-transition: opacity 1s; }
+a:hover { opacity: 0.6; }
+a:visited {  }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins    { text-decoration: none; }
+del    { text-decoration: line-through; }
+table  { border-collapse: collapse; border-spacing: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+code { color: #000; }
+.clear   { clear: both; }
+hr { margin-top: 45px; margin-bottom: 40px; border: 0px; border-top: 1px solid #CCC; }
+.syntaxhighlighter .line { font-size: 13px; }
+a.active { font-weight: bold; }
+.fixed { position: fixed !important; }
+
+
+/*-- 1. General --*/
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; color: #000; }
+h1 { font-size: 40px; }
+h2 { font-size: 35px; }
+h3 { font-size: 30px; }
+h4 { font-size: 26px; margin-bottom: 25px; }
+#wrapper { width: 1180px; margin: 0 auto; position: relative; }
+#intro { width: 1178px; margin: 0 auto; margin-top: 40px; margin-bottom: 50px; padding-bottom: 80px; background: #FFF; border: 1px solid #EEE; }
+#intro-top { padding: 70px 0px; text-align: center; font-size: 22px; color: #999; font-style: italic; }
+#theme-name { padding: 80px 0px; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; text-align: center; }
+#theme-name h1 { font-size: 60px; }
+#theme-details { width: 960px; margin: 0 auto; border-bottom: 1px solid #EEE; }
+#theme-metas { width: 320px; float: left; padding-top: 40px; padding-bottom: 40px; border-right: 1px solid #EEE; }
+#theme-metas ul { margin: 0; padding: 0; }
+#theme-metas ul li { margin-bottom: 10px; }
+#theme-thank-you { width: 560px; float: right; padding-top: 40px; padding-bottom: 40px; line-height: 170%; font-size: 14px; }
+#toc { margin-top: -1px; padding-top: 70px; border-top: 1px solid #EEE; }
+#toc h2 { display: block; width: 960px; margin: 0 auto; margin-bottom: 45px; font-size: 30px; }
+#toc ul { display: block; width: 960px; margin: 0 auto; }
+#toc ul li { margin-bottom: 15px; padding-left: 15px; font-size: 14px; }
+#toc ul li a { color: #333; font-weight: 400; }
+
+#content { width: 908px; position: relative; float: left; margin-bottom: 80px; background: #FFF; border: 1px solid #EEE; }
+h2.content-title { width: 800px; margin-top: -1px; padding: 50px 54px; border-bottom: 1px solid #EEE; border-top: 1px solid #EEE; }
+.content-block { width: 800px; margin: 0 auto; padding: 60px 0px; }
+.content-block p { line-height: 170%; margin-bottom: 20px; font-size: 14px; }
+ul.docs-nav { display: block; width: 240px; float: right; background: #FFF; border: 1px solid #EEE; }
+ul.docs-nav li { border-top: 1px solid #EEE; font-size: 12px; }
+ul.docs-nav li:first-child { border-top: 0px; }
+ul.docs-nav li a { display: block; padding: 15px 20px; color: #333; font-weight: 400; }
+ul.docs-nav li a.active { background: #000; color: #FFF; }
+
+.question { margin-bottom: -1px; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; }
+.question-tab { position: relative; padding: 18px 0px 18px 50px; font-size: 16px; cursor: pointer; font-weight: 500; }
+.question-tab:before { display: block; content: "+"; position: absolute; left: 0; top: 13px; width: 25px; height: 25px; line-height: 25px; text-align: center; font-weight: 400; background: #000; color: #FFF; }
+.active-question { font-style: italic; }
+.active-question:before { content: "-"; }
+.question-tab span { font-size: 16px; font-weight: bold; color: #000; font-family: verdana, sans-serif; }
+.question-answer { display: none; padding-bottom: 14px; padding-top: 22px; }
+
+
+
+
+
+

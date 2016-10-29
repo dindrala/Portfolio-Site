@@ -1,119 +1,253 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Amandeep's Portfolio</title>
-    <link href=
-    "https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans"
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel=
-    "stylesheet" type="text/css">
-    <link href=
-    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/responsive.css" rel="stylesheet"/>
-    <script id="hello-hi-hey" type="text/x-handlebars-template">
-          <div class="project-section" class="grid">
-             <a href="{{projectUrl}}" target="_blank"><img src="{{projectImg}}"></img></a>
-             <div class="span-text">
-               <span class="title text">{{title}}</span> <br />
-               <span class="description text">{{{description}}}</span>
-             </div>
-            </div>
-     </script>
+
+<!-- Title -->
+<title>AMANDEEP | PORTFOLIO</title>
+
+<!-- Character set -->
+<meta charset="UTF-8">
+
+<!-- Configure viewport for mobile / tabled devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- Define keywords for search engines -->
+<meta name="keywords" content="Keyword1, Keyword2, Keyword3">
+
+<!-- Define a description of your web page -->
+<meta name="description" content="This is the description!">
+
+<!-- Shorcut icon -->
+<link rel="shortcut icon" href="images/favicon.png">
+
+<!-- Apple Touch Icon  -->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-precomposed.png">
+
+<!-- Call Google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:900,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="style/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="style/animate.css" />
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+
 </head>
+
 <body>
-    <header class="smooth">
-        <div class="logo-nav">
-            <div class="logo">
-                <img alt="propic" class="profilepic" src="amandeep.jpg">
-                <h1>Amandeep Dindral</h1>
-            </div>
-            <nav>
-                <ul class="main-nav">
-                    <li class="tab" id="aboutMe">
-                        <a class="slide-center-out" data-content="main" href=
-                        "/">About Me</a>
-                    </li>
-                    <li class="tab" id="projects">
-                        <a class="slide-center-out" data-content="articles"
-                        href="/project">Projects</a>
-                    </li>
-                    <li>
-                        <a class="slide-center-out" href=
-                        "http://twitter.com/amandeepdindral" target=
-                        "_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a class="slide-center-out" href=
-                        "http://linkedin.com/pub/amandeep-dindral/60/6aa/8ab"
-                        target="_blank"><i class=
-                        "fa fa-linkedin fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a class="slide-center-out" href=
-                        "https://github.com/dindrala" target="_blank"><i class=
-                        "fa fa-github-alt fa-lg"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="title-subline smooth">
-            <!-- <h1>Amandeep's Portfolio</h1> -->
-        </div>
-    </header>
-    <main>
-        <section class="tab-content about-tab" data-content="about" id="main">
-            <div id="about-title">
-                <!-- <h1>About Me</h1> -->
-            </div>
-            <div class="p-repo-border">
-                <div class="aboutmep">
-                    <p>Hello my name is Amandeep. I am a Web Developer. I've been working in the tech industry for
-                    the last 3+ years on the business development side of things. I have always been fascinated by
-                    product development which eventually led me to make a switch to Web Development. I love taking
-                    complex client ideas and making their vision a (virtual) reality. When I am not coding I enjoy exercising, reading and films.
-                    Check out my projects on Github:</p>
+
+<!-- PRELOADER ( uncomment in case you need the percentage counter )
+<div id="elastic-preloader"></div>
+-->
+
+<!-- HEADER -->
+<div class="inner_header_big image_bg" data-background-url="images/codepic.jpg">
+
+     <!-- Page Top -->
+     <div class="elastic_top">
+           <div class="elastic_top_inner">
+
+                <!-- Logo -->
+                <div class="elastic_logo_container">
+
+                     <!-- Text Logo -->
+                     <div class="text_logo white_logo">
+                          <a href="">AMANDEEP DINDRAL</a>
+                     </div>
+
+                     <!-- Image Logo ( don't forget to comment out the text logo if you activated this one! )
+                     <div class="image-logo">
+                          <a href="">
+                             <img src="images/image-logo.png" alt="Elastic" />
+                          </a>
+                     </div>
+                      -->
 
                 </div>
-                <div id="github">
-                    <ul id="repo"></ul>
+
+                <!-- Menu -->
+                <div class="elastic_menu_container">
+
+                        <div>
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                        </div>
+                     </a>
                 </div>
-            </div>
-        </section>
-        <div id="project-title">
-            <!-- <h1>Projects</h1> -->
-        </div>
-        <section class="tab-content" id="articles"></section>
-        <footer>
-            <p class="footerptag">&copy; 2016 Amandeep Dindral</p>
-        </footer>
-    </main>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
-    </script>
-    <script src="scripts/handlebars-v4.0.5.js">
-    </script>
-    <script src="scripts/page.js">
-    </script>
-    <script src="scripts/githubToken.js">
-    </script>
-    <script src="scripts/repo.js">
-    </script>
-    <script src="scripts/repoView.js">
-    </script>
 
+           <div class="clear"></div>
+           </div>
+     </div>
+     <!-- End: Page Top -->
 
-    <script src="scripts/portfolio.js">
-    </script>
-    <script src="scripts/projectView.js">
-    </script>
-    <script src="scripts/aboutController.js">
-    </script>
-    <script src="scripts/projectController.js">
-    </script>
-    <script src="scripts/routes.js">
-    </script>
+     <!-- Page Title -->
+     <div class="page-title white_text">
+          <h1>CLIENT <br> PORTFOLIO</h1>
+          <p>Front End Developer</p>
+     </div>
+
+</div>
+<!-- END: HEADER -->
+
+<!-- PORTFOLIO -->
+<div class="inner-page">
+      <div class="page-contents">
+
+           <!-- Portfolio Items -->
+           <div class="portfolio-cards-3col">
+                <div class="cards-container">
+
+                      <!-- 1st Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="https://poptik.herokuapp.com" target="_blank">POPTIK</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="https://poptik.herokuapp.com" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio1.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+
+                      <!-- 2nd Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="" target="_blank">COMING SOON</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio2.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+
+                      <!-- 3rd Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="" target="_blank">COMING SOON</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio3.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+
+                      <!-- 4th Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="" target="_blank">COMING SOON</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio4.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+
+                      <!-- 5th Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="" target="_blank">COMING SOON</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio5.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+
+                      <!-- 6th Item -->
+                      <div class="portfolio-item" data-animation="true" data-animation-style="fadeIn">
+
+                           <!-- Card Top -->
+                           <div class="card-top">
+                                <p>CLIENT</p>
+                                <h3><a href="" target="_blank">COMING SOON</a></h3>
+                           </div>
+
+                           <!-- Thumbnail -->
+                           <div class="thumbnail">
+                                <a href="" target="_blank">
+                                   <img src="images/portfolio_grids/portfolio6.jpg" alt="" />
+                                </a>
+                           </div>
+
+                      </div>
+                </div>
+           <div class="clear"></div>
+           </div>
+           <!-- End: Portfolio Items -->
+
+      </div>
+</div>
+<!-- END: PORTFOLIO -->
+
+<!-- FOOTER -->
+<div class="footer black-footer" data-animation="true" data-animation-style="slideInUp">
+
+     <!-- Social Links -->
+     <div class="footer-social">
+          <a href="https://twitter.com/amandeepdindral" target="_blank">TWITTER</a>
+          <a href="https://www.linkedin.com/in/amandeepdindral" target="_blank">LINKEDIN</a>
+          <a href="mailto:dindrala@gmail.com" target="_blank">EMAIL</a>
+     </div>
+
+     <!-- Copyright Text -->
+     <div class="footer-copyright">
+          <p>Amandeep Dindral 2016 &copy; All Rights Reserved</p>
+     </div>
+
+</div>
+<!-- END: FOOTER -->
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/easing.js"></script>
+<script type="text/javascript" src="scripts/fitvids.js"></script>
+<script type="text/javascript" src="scripts/backstretch.js"></script>
+<script type="text/javascript" src="scripts/imagesloaded.js"></script>
+<script type="text/javascript" src="scripts/flexslider.js"></script>
+<script type="text/javascript" src="scripts/owlcarousel.js"></script>
+<script type="text/javascript" src="scripts/tipTip.js"></script>
+<script type="text/javascript" src="scripts/entrance.js"></script>
+<script type="text/javascript" src="scripts/tubular.js"></script>
+<script type="text/javascript" src="scripts/magnific_popup.js"></script>
+<script type="text/javascript" src="scripts/masonry.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
 </body>
+
 </html>
