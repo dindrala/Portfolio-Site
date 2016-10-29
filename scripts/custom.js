@@ -51,7 +51,7 @@
                                      }
                          });
                 });
-                
+
                 /* Open Overlay Menu */
                 $('.open-overlay').on('click', function(e) {
                           e.preventDefault();
@@ -73,7 +73,7 @@
                           });
 
                 });
-                
+
                 /* Close Overlay Menu */
                 $('#close-overlay').on('click', function(e) {
                           e.preventDefault();
@@ -88,7 +88,7 @@
 
                           });
                 });
-                
+
                 /* Close Side Panel */
                 $('#close-panel').on('click', function(e) {
                           e.preventDefault();
@@ -96,7 +96,7 @@
                                     $('#side_overlay').fadeOut(300);
                           });
                 });
-                
+
                 /* Open Sub Menu */
                 $('#side_menu_panel div.menu ul li a.parent-link').on('click', function(e) {
                           e.preventDefault();
@@ -104,7 +104,7 @@
                           var $subMenuContainer = $(this).parent().find('ul').first();
                           $subMenuContainer.slideToggle('slow');
                 });
-                
+
                 /*  VIDEO BACKGROUNDS
                 ================================================*/
                 if ( $('.video_bg').length != 0 ) {
@@ -125,10 +125,15 @@
 
                 /*  HOME VARIANTS
                 ================================================*/
+                
+
                 $('.image_bg').each(function(){
                       if ( $(this).length != 0 ) {
                                var background_url = $(this).attr("data-background-url");
                                $(this).backstretch(background_url);
+
+
+
                       }
                 });
 
@@ -143,7 +148,7 @@
                 $('.video-link').magnificPopup({
                           type : 'iframe'
                 });
-                
+
                 /*  LOAD SERVICES
                 ================================================*/
                 $('.load-service').magnificPopup({
@@ -160,7 +165,7 @@
                                       }
                           }
                 });
-                
+
                 /*  LOAD TEAM MEMBERS
                 ================================================*/
                 $('.load-member').magnificPopup({
@@ -181,7 +186,7 @@
 
                 /*  SHOW / HIDE CONTACT ELEMENTS
                 ================================================*/
-                
+
                 /*-- Show Phone number --*/
                 $('a[data-role="show-phone-number"]').on('click', function(e) {
                           e.preventDefault();
@@ -229,7 +234,7 @@
                              }
 
                 });
-                
+
                 /*-- Show Map --*/
                 $('a[data-role="show-map"]').on('click', function(e) {
                           e.preventDefault();
@@ -255,7 +260,7 @@
                              }
 
                 });
-                
+
                 /*-- Show Social Icons --*/
                 $('a[data-role="show-social-icons"]').on('click', function(e) {
                           e.preventDefault();
@@ -310,7 +315,7 @@
                                               $('input#elastic-name').css({'color':error_color,'border':error_border});
                                               $('input#elastic-name').val(missing_name);
                                     }
-                                    
+
                                     //Check if name field has error message
                                     $('input#elastic-name').on('click', function() {
                                               var actual_name_value = $('input#elastic-name').val();
@@ -319,13 +324,13 @@
                                                         $(this).css({'color':original_color,'border':original_border});
                                               }
                                     });
-                                    
+
                                     //Check if email field empty or the mail is invalid
                                     if (mail_value == "" || mail_value == missing_mail || mail_value == invalid_mail ) {
                                               $('input#elastic-email').css({'color':error_color,'border':error_border});
                                               $('input#elastic-email').val(missing_mail);
                                     }
-                                    
+
                                     //Validate email address
                                     if ( mail_value != missing_mail && mail_value != '' ) {
                                               var atpos=mail_value.indexOf("@");
@@ -336,7 +341,7 @@
                                                         return false;
                                               }
                                      }
-                                     
+
                                     //Check if email field has error message
                                     $('input#elastic-email').on('click', function() {
                                               var actual_email_value = $('input#elastic-email').val();
@@ -351,7 +356,7 @@
                                               $('input#elastic-subject').css({'color':error_color,'border':error_border});
                                               $('input#elastic-subject').val(missing_subject);
                                     }
-                                    
+
                                     //Check if subject field has error message
                                     $('input#elastic-subject').on('click', function() {
                                               var actual_subject_value = $('input#elastic-subject').val();
@@ -360,13 +365,13 @@
                                                         $(this).css({'color':original_color,'border':original_border});
                                               }
                                     });
-                                    
+
                                     //Check if message textarea empty
                                     if (message_value == "" || message_value == missing_message ) {
                                               $('textarea#elastic-message').css({'color':error_color,'border':error_border});
                                               $('textarea#elastic-message').val(missing_message);
                                     }
-                                    
+
                                     //Check if message textarea has error message
                                     $('textarea#elastic-message').on('click', function() {
                                               var actual_message_value = $('textarea#elastic-message').val();
@@ -375,7 +380,7 @@
                                                         $(this).css({'color':original_color,'border':original_border});
                                               }
                                     });
-                                    
+
                                     //Check if all the fields all completed properly
                                     if ( name_value == "" || name_value == missing_name ||  mail_value == "" || mail_value == invalid_mail ||  mail_value == missing_mail || message_value == "" ||  message_value == missing_message || subject_value == "" || subject_value == missing_subject ) { return false; }
 
@@ -384,16 +389,16 @@
                                               type: 'post',
                                               url: 'mail.php',
                                               data: 'name=' + name_value + '&email=' + mail_value + '&subject=' + subject_value + '&comments=' + message_value,
-              
+
                                               success: function(results) {
-                                                 
+
                                                         $.magnificPopup.open({
                                                                   items: {
                                                                           src: '<div class="contact-info"><p>' + results + ' </p></div>',
                                                                           type: 'inline'
                                                                   }
                                                         });
-                                                        
+
                                                         $('input#elastic-name').val('');
                                                         $('input#elastic-email').val('');
                                                         $('input#elastic-subject').val('');
@@ -416,12 +421,12 @@
 
 
       }); //END: document.ready
-      
-      
+
+
       /* window.load
       ==================*/
       $(window).load(function(){
-     
+
                 /*  PRELOADER
                 ================================================*/
                 var preloader = '#elastic-preloader';
@@ -436,7 +441,7 @@
 
                 /*  PORTFOLIO
                 ================================================*/
-                
+
                 /*-- Masonry Layouts --*/
                 $('.masonry-container').masonry({ columnWidth: 1 });
 
@@ -448,13 +453,13 @@
                            $('body').append('<div id="portfolio-overlay"><div id="item-preloader"><div id="preloader_1"><span></span><span></span><span></span><span></span><span></span></div></div></div>');
                            setTimeout(function(){
                                    $('#portfolio-overlay').load(source,function(){
-        
+
                                              //Call the slider if the elment exist
                                              if ( $('#portfolio-slider').length != 0 ) {
                                                        $('#portfolio-slider').flexslider({
-                                                                 controlNav: false, 
-                                                                 prevText: "&lt;", 
-                                                                 nextText: "&gt;", 
+                                                                 controlNav: false,
+                                                                 prevText: "&lt;",
+                                                                 nextText: "&gt;",
                                                                  smoothHeight: true,
                                                                  start: function(){
                                                                            var slider_height = $('#portfolio-slider ul li:first-child img').height();
@@ -462,21 +467,21 @@
                                                                  }
                                                        });
                                              }
-        
+
                                              //Call fitVids for iframes
                                              if ( $('.portfolio-iframe').length != 0 ) {
                                                        $('.portfolio-iframe').fitVids();
                                              }
-        
-        
+
+
                                              //Fade out the loader
                                              $('#item-preloader').fadeOut(400,function(){
                                                        $('#item-preloader').remove();
                                              });
-        
+
                                              //Fade in the item
                                              $('#portfolio-item').fadeIn(1000);
-        
+
                                              //Close the item
                                              $('a#close-item').on('click', function(e) {
                                                        e.preventDefault();
